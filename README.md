@@ -9,7 +9,7 @@ Uma forma fácil de discutir em reuniões corporativas, trata-se de uma API que 
 
 ## Instalação
 
-Após clonar o repositório, acesse ele instale as dependências e rode o node com segundo armento app.js e o terceiro argumento o número da porta desejada.
+Após clonar o repositório, acesse o diretório, instale as dependências, e rode o node com segundo argumento passando o nome do arquivo "app.js" e o terceiro argumento o número da porta desejada.
 
 ```sh
 cd CorporatePhraseGenerator
