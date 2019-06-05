@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const dataLoader = require("./data-loader");
-const getPhrase = require("./phrase-generator");
+const dataLoader = require("./lib/data-loader");
+const getPhrase = require("./lib/phrase-generator");
 
 app.get("/get-phrase", function(req, res) {
 	
@@ -10,7 +10,7 @@ app.get("/get-phrase", function(req, res) {
 	res.setHeader('Content-Type', 'application/json');	
 	res.set({ 'content-type': 'application/json; charset=utf-8' });
 
-	dataLoader("data.json", function(data) {
+	dataLoader("data/data.json", function(data) {
 		response.phrase = getPhrase(data);
 	});
 
